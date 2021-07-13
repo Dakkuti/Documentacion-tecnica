@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML/CSS Documentación</header>
+        <a href="#¿Que_es_HTML?" class="nav-link">¿Que es HTML?</a>
+        <a href="#¿Que_es_Css?" class="nav-link">¿Que es Css?</a>
+        <a href="#El_proceso_de_renderizado_de_la_web" class="nav-link">El proceso de renderizado de la web</a>
+        <a href="#Anatomía_de_un_elemento_HTMl" class="nav-link">Anatomía de un elemento HTML</a>
+        <a href="#Tipos_de_errores_en_HTML" class="nav-link">Tipos de errores en HTML</a>
+        <a href="#Conceptos_iniciales_de_CSS" class="nav-link">Conceptos iniciales de CSS</a>
+        <a href="#Asociar_un_CSS_a_una_página_web" class="nav-link">Asociar un CSS a una página web</a>
+        <a href="#Frameworks_CSS" class="nav-link">Frameworks CSS</a>
+        
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="¿Que_es_HTML?">
+            <header>¿Que es HTML?</header>
+            <p>Es un lenguaje de marcado usado para decirle a tu navegador como estructurar las páginas web que visitas.
+                No es un lenguaje de programación.</p>
+
+        </section>
+
+        <section class="main-section" id="¿Que_es_Css?">
+            <header>¿Que es Css?</header>
+            <p>Es un lenguaje que nos permite crear páginas web con un diseño agradable para los usuarios. Tampoco es un
+                lenguaje de programación.</p>
+        </section>
+
+
+        <section class="main-section" id="El_proceso_de_renderizado_de_la_web">
+            <header>El proceso de renderizado de la web</header>
+            <p>Es necesario que el navegador interprete las etiquetas y reglas que le damos ya que el no entiende
+                exactamente el código como lo presentamos , para esto se usan las siguientes herramientas:DOM, CSSOM, y
+                Render tree</p>
+        </section>
+
+        <section class="main-section" id="Anatomía_de_un_elemento_HTMl">
+            <header>Anatomía de un elemento HTML</header>
+            <p>Nuestros elementos HTML se componen de: Etiquetas, contenidos, y etiqueta de cierre</p>
+
+            <code>< h1 > < /h1 ></code>
+
+            </ul>
+
+            <p>Las etiquetas de apertura también pueden tener atributos. Los atributos nos permiten definir
+                características especiales para nuestros elementos</p>
+        </section>
+
+        <section class="main-section" id="Tipos_de_errores_en_HTML">
+            <header>Tipos de errores en HTML</header>
+            <ul>
+                <li>Errores sintácticos: son errores de escritura en el código que hacen que el programa no funcione.
+                </li>
+                <li>Errores lógicos: en estos errores la sintaxis es correcta, pero ya l código no hace lo que debería
+                    por lo que el programa funciona de forma incorrecta.</li>
+            </ul>
+
+            <p>HTML tiene una válidacion automática en el cierre de etiquetas más no nos muestra como en otros lenguajes
+                el debug o el error.</p>
+        </section>
+
+        <section class="main-section" id="Conceptos_iniciales_de_CSS">
+            <header>Conceptos iniciales de CSS</header>
+            <p>Anatomía de una declaración CSS</p>
+
+            <ul>
+                <li>Selector: son la referencia a los elementos HTML que queremos estilizar. Los nombres de estas
+                    etiquetas van seguidas de una llave de apertura y otra de cierre</li>
+                <code>
+                    h1 {
+                       }
+                </code>
+                <li>Propiedades: son el tipo de estilo que queremos darle a nuestros elementos. Van seguidas de dos
+                    puntos (:). Las propiedades deben estar dentro de las llaves del selector que definimos
+                    anteriormente. Podemos escribir diferentes propiedades en un mismo selector. </li>
+                <code>
+                       color:;
+                    </code>
+                <li>Valores: son el estilo que queremos que tomen nuestros elementos HTML con respecto a una propiedad.
+                    Van seguidas de un punto y coma (;)</li>
+                <code>
+                        h1 { 
+                            color: red;
+                         }
+                </code>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Asociar_un_CSS_a_una_página_web">
+            <header>Asociar un CSS a una página web</header>
+            <p>Para que una página de contenido gane un aspecto determinado, necesitaremos un medio para cargar o
+                asociar el CSS dentro de un HTML. Esta operación se puede realizar a varios niveles, pero lo más
+                habitual es enlazar el CSS por medio de la etiqueta
+                <link>
+            </p>
+            <code>< link rel="stylesheet" href="/css/app.css" ></code>
+
+            <p>Esa etiqueta generalmente se pone en el
+
+                <head>, para que el CSS se cargue desde el inicio y permite que la página HTML se presente con el estilo
+                    definido en el archivo CSS enlazado.
+            </p>
+
+        </section>
+
+        <section class="main-section" id="Frameworks_CSS">
+            <header>Frameworks CSS</header>
+            <p>Los frameworks CSS, a veces también llamados frameworks de diseño son herramientas que nos permiten
+                implementar un marco de trabajo sólido sobre el que desarrollar la parte estética de los proyectos web.
+                Ofrecen diversas ventajas
+                La ventaja de los frameworks basados en clases de utilidad es que el diseño que se consigue con ellos es
+                totalmente único para cada sitio web, pero sin embargo la desventaja es que usan muchas clases para
+                poder aplicar estilo a los elementos de la página.
+            </p>
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+</body>
+
+</html>
